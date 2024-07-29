@@ -7,6 +7,7 @@
   --color-secundario: #8b1247;
   --color-ternario: #451529;
   --color-cuaternario: #ff6365;
+  --color-light: #f2dfdf;
 }
 
 body {
@@ -25,4 +26,7 @@ body {
 }
 .bg4 {
   background-color: var(--color-cuaternario);
+}
+.bgLight {
+  background-color: var(--color-light);
 }

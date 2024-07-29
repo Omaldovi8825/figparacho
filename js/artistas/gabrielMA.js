@@ -7,7 +7,6 @@ export const gabrielMA = new Evento(
   "5 de agosto",
   "17:00",
   `
-  <h5 class="text-center">Programa</h5>
   <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
   <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>
   <ul>
@@ -44,6 +43,9 @@ export const gabrielMA = new Evento(
     <li>Primer lugar y mención honorífica en el Concurso y Festival Internacional de Guitarra de Taxco.</li>
     <li>Primer premio con 98 /100 en el Concorso Internazionale Chitarristico “Giulio Rospigliosi” en Lamporecchio, Italia.</li>
   </ul>
+  <p>Se ha presentado con diversas orquestas de México como: Orquesta Sinfónica del Estado de Hidalgo, Orquesta de Cámara del Instituto de Bellas Artes UJED, Filarmónica de Acapulco, Orquesta Sinfónica de la  ESMUJED y  Orquesta Rodolfo Halfter.</p>
+  <p>A lo largo de su carrera ha recibido clases de grandes maestros como:  Oscar Ghiglia, Lorenzo Michelli, Marcin Dylan, Giulio Tampalini, Adriano del Sal, Pavel Steidl y  Mauro Zanatta, quienes han impactado notablemente en su interpretación guitarrística.</p>
+  <p>Ha sido beneficiado con el Programa de Estímulos a Proyectos Académicos del Conservatorio de las Rosas y con el  Programa de Estímulo a la Creación y Desarrollo Artístico del Fondo Especial para la Cultura y las Artes del Estado de México. Por otra parte, en 2022 desarrolló el proyecto “Sonatas Mexicanas para Guitarra” acreedor del apoyo Creadores Escénicos B del Sistema de Apoyos a la Creación Artística y Proyectos Culturales para el estreno, difusión y grabación de tres sonatas dedicadas al intérprete. Actualmente funge como docente en Euterpe Academia de Guitarra y la Facultad Popular de Bellas Ates de la UMSNH en Morelia, Mich.</p>
   `,
   "estelar"
 )
