@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGP</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h3 class="mb-0 bg3 text-white py-2 px-3 mb-4">Conciertos estelares</h3>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-12 col-md-4">
+            <div class="border rounded overflow-hidden">
+              <h5 class="mb-0 bg1 text-end text-white p-2">
+                Gabriel Mendez Alarcon
+              </h5>
+              <img class="w-100" src="./assets/img/gabrielMA1.jpg" alt="" />
+              <div class="d-flex justify-content-between p-2">
+                <span>5 de agosto</span>
+                <a
+                  class="text-decoration-none bg2 text-white py-1 px-2 rounded"
+                  href="./eventos.html"
+                  >Ver más</a
+                >
+              </div>
+            </div>
+          </div> -->
+          <evento-card
+            v-for="evento in eventos"
+            :key="evento.id"
+            :evento="evento"
+          ></evento-card>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-12 border">
+          <div class="row">
+            <div class="col-12 border">
+              <h3 class="mb-0">Gabriel Méndez Alarcón</h3>
+            </div>
+            <div class="col-12 col-md-6 mb-3 border">
+              <img
+                class="w-100 h-100 object-fit-cover"
+                src="./assets/img/gabriel1.jpg"
+                alt="gabriel ma"
+              />
+            </div>
+            <div class="col-12 col-md-6 mb-3 border">
+              <h5 class="text-center">Programa</h5>
+              <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
+              <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>
+              <ul>
+                <li>Prelude</li>
+                <li>Aria</li>
+                <li>Plainté</li>
+                <li>Comme un gigue</li>
+              </ul>
+              <p>
+                Selección de los XXIV Carpichos de Goya, Mario Castelnuovo
+                Tedesco (1895-1968)
+              </p>
+              <ul>
+                <li>Francisco Goya y lucientes</li>
+                <li>Obsequio al maestro</li>
+                <li>Dios la perdone y era su madre</li>
+                <li>No hubo remedio</li>
+              </ul>
+              <p>Sonata Op. 47, Alberto Ginastera (1916-1983)</p>
+              <ul>
+                <li>Esordio</li>
+                <li>Scherzo</li>
+                <li>Canto</li>
+                <li>Final</li>
+              </ul>
+              <div class="text-center">
+                <button class="border-none">Ver más</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+    <script src="./js/pages/index.js" type="module"></script>
+  </body>
+</html>
