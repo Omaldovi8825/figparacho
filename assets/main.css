@@ -31,6 +31,14 @@ body {
   background-color: var(--color-light);
 }
 
+.color2 {
+  color: var(--color-secundario);
+}
+
+.aspect-ratio-4-3 {
+  aspect-ratio: 4 / 3;
+}
+
 .accordion-button {
   background-color: var(--color-cuaternario);
   color: white;
@@ -38,4 +46,8 @@ body {
 .accordion-button:not(.collapsed) {
   background-color: var(--color-cuaternario);
   color: white;
+}
+
+.bi::before {
+  line-height: unset;
 }

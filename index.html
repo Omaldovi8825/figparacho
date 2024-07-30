@@ -34,31 +34,44 @@
             class="accordion-collapse collapse show"
             data-bs-parent="#conciertos"
           >
-            <div class="accordion-body">
-              <div class="container">
-                <div class="row">
-                  <div
-                    v-for="evento in eventos"
-                    :key="evento.id"
-                    class="col-12 col-md-4"
-                  >
-                    <div class="rounded-3 overflow-hidden">
-                      <h5 class="mb-0 bg1 text-end text-white p-2">
-                        {{ evento.artista }}
-                      </h5>
-                      <img
-                        class="w-100"
-                        :src="`./assets/img/${evento.img}`"
-                        alt="evento"
-                      />
-                      <div class="d-flex justify-content-between p-2 bgLight">
-                        <span>{{ evento.fecha }} - {{ evento.hora }} hrs</span>
-                        <a
-                          class="text-decoration-none bg2 text-white py-1 px-2 rounded"
-                          :href="`./eventos.html?id=${evento.id}`"
-                          >Ver más</a
-                        >
-                      </div>
+            <div class="container pt-3">
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <p class="mb-0 fw-bold">
+                    Lugar:
+                    <a
+                      href="https://maps.app.goo.gl/RW3sV7Bgy11JVVzU8"
+                      class="color2"
+                      target="_blank"
+                      >Auditorio del CIDEG
+                      <i class="bi bi-geo-fill"></i>
+                      </a
+                    >
+                  </p>
+                </div>
+                <div
+                  v-for="evento in estelares"
+                  :key="evento.id"
+                  class="col-12 col-md-6 col-lg-4 mb-3"
+                >
+                  <div class="rounded-3 overflow-hidden">
+                    <h5 class="mb-0 bg1 text-end text-white p-2">
+                      {{ evento.artista }}
+                    </h5>
+                    <img
+                      class="w-100 aspect-ratio-4-3 object-fit-cover"
+                      :src="`./assets/img/${evento.img}`"
+                      alt="evento"
+                    />
+                    <div
+                      class="d-flex justify-content-between align-items-center p-2 bgLight"
+                    >
+                      <span>{{ evento.fecha }} - {{ evento.hora }} hrs</span>
+                      <a
+                        class="text-decoration-none bg2 text-white py-1 px-2 rounded"
+                        :href="`./eventos.html?id=${evento.id}`"
+                        >Ver más</a
+                      >
                     </div>
                   </div>
                 </div>

@@ -13,19 +13,19 @@
         <div class="row g-4">
           <div class="col-12">
             <h3 class="mb-0 text-center bg1 text-white py-2">
-              {{ evento.artista }}
+              {{ evento.artista }} - ({{ evento.pais }})
             </h3>
           </div>
           <div class="col-12 col-md-6">
             <img
               :src="urlArtista"
               alt="nombre artista"
-              class="w-100 h-100 object-fit-cover"
+              class="w-100 h-100 object-fit-cover rounded-3"
             />
           </div>
           <div class="col-12 col-md-6">
             <div class="h-100 bgLight p-3 rounded-3">
-              <h4 class="text-center">Programa</h4>
+              <h4 class="text-center mb-3">Programa</h4>
               <div v-html="evento.programa"></div>
             </div>
           </div>

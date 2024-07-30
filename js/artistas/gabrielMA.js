@@ -4,6 +4,7 @@ export const gabrielMA = new Evento(
   1,
   "gabrielMA1.jpg",
   "Gabriel Méndez Alarcón",
+  "México",
   "5 de agosto",
   "17:00",
   `
