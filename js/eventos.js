@@ -5,6 +5,8 @@ import { pabloG } from "./artistas/pabloG.js"
 import { albertoQ } from "./artistas/albertoQ.js"
 import { martinR } from "./artistas/martinR.js"
 import { ginaA } from "./artistas/ginaA.js"
+import { paulinaM } from "./artistas/paulinaM.js"
+import { enriqueG } from "./artistas/enriqueG.js"
 
 export const eventos = [
   gabrielMA,
@@ -14,4 +16,6 @@ export const eventos = [
   albertoQ,
   martinR,
   ginaA,
+  paulinaM,
+  enriqueG,
 ]

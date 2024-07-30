@@ -30,7 +30,7 @@ export const martinR = new Evento(
   <ul>
     <li>Creador y director artístico del festival La Guitarra Jóven.</li>
     <li>Creador y director del Centro de Artes Uruapan.</li>
-    <li>-	Creador y director académico de la Escuela de Estudios Artísticos.</li>
+    <li>Creador y director académico de la Escuela de Estudios Artísticos.</li>
   </ul>
   `,
   "vespertino"

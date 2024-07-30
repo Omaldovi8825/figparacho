@@ -13,8 +13,8 @@ export const albertoQ = new Evento(
   <p>Etude No. 8 (Allegretto con motto), Giulio Regondi (1822 – 1872)</p>
   <p>Fantasía Húngara, Johann Kaspar Mertz (1806 – 1856)</p>
   <p class="text-center fw-bold">Intermedio</p>
-  <p>Julia Florida (Barcarola), Agustín Barrios(1885 – 1944)</p>
-  <p>Toccata de Pasquini, Leo Brouwer (1939 - ) </p>
+  <p>Julia Florida (Barcarola), Agustín Barrios (1885 – 1944)</p>
+  <p>Toccata de Pasquini, Leo Brouwer (1939) </p>
   <p>Dos piezas Brasileñas:</p>
   <ul>
     <li>Se ela perguntar, Dilermando Reis (1916 – 1977)</li>
@@ -24,7 +24,7 @@ export const albertoQ = new Evento(
   <ul>
     <li>I. Esordio</li>
     <li>II. Scherzo</li>
-    <li>III. Canto-</li>
+    <li>III. Canto</li>
     <li>IV. Finale </li>
   </ul>
   `,
