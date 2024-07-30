@@ -7,7 +7,7 @@ export const gabrielMA = new Evento(
   "México",
   17,
   "17:00",
-  `
+  /*html*/ `
   <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
   <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>
   <ul>
@@ -31,7 +31,7 @@ export const gabrielMA = new Evento(
     <li>Final</li>
   </ul>
   `,
-  `
+  /*html*/ `
   <p>Guitarrista clásico mexicano con más de veinte años de trayectoria a nivel nacional e internacional como concertista y docente. Su carrera como músico ha sido influenciada en gran medida por valiosos maestros e intérpretes como: Eva Pleskova, Sergio Damián Wilson y Giampaolo Bandini. Se graduó con  Lode e Menzione Speciale de la Maestría en Interpretación Musical (Laurea di secondo livello) en el  Istituto Luigi Boccherini  de Lucca, Italia en 2015.</p>
   <p>Ha obtenido diversos reconocimientos, en concursos nacionales e internacionales, tales como:</p>
   <ul>

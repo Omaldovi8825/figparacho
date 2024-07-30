@@ -7,7 +7,7 @@ export const luisAngelSV = new Evento(
   "México",
   6,
   "19:00",
-  `
+  /*html*/ `
   <ul>
     <li>
       <p>Tocatta Arpegiatta (Libro primo d'intavolatura di chitarrone), Giovanni G. Kapsberger</p>
@@ -38,7 +38,7 @@ export const luisAngelSV = new Evento(
     </li>
   </ul>
   `,
-  `
+  /*html*/ `
   <p>Ángel Salcido (1987) Licenciado en Guitarra clásica por el conservatorio de Música de Chihuahua, Escuela de Estudios Profesionales donde actualmente tiene actividad como catedrático.</p>
   <p>Se ha preocupado por desarrollar su formación profesional reforzando su perfil académico con artistas concertistas como Paolo Pegoraro, Adriano de Sal, Mauro Zanatta, Ali Arango dentro de Diplomados aplicados al desarrollo musical guitarristico.</p>
   <p>Ha revisado su repertorio con diferentes músicos artistas de prestigio internacional tales como Ana Vidovic, David Tanembau, Carlos Barbosa Lima, Jose Manuel Alcantara, Sharon Isbin, Dieter Heninggs, Paolo Pegoraro, Juio Cesar Oliva, Mauro Zanatta, Adriano del Sal, Gerardo Tamez, David Russell. entre otros.</p>

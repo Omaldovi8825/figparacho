@@ -7,7 +7,7 @@ export const pabloG = new Evento(
   "México",
   12,
   "17:30",
-  `
+  /*html*/ `
   <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
   <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>
   <ul>
@@ -34,7 +34,7 @@ export const pabloG = new Evento(
     <li>Final</li>
   </ul>
   `,
-  `
+  /*html*/ `
   <p>Pablo Garibay, guitarrista mexicano laureado -nacional e internacionalmente- obtuvo primeros lugares en más de quince destacados certámenes como el Francisco Tárrega y Julián Arcas en España, René Bartoli en Francia, Manuel M. Ponce, Paracho y Taxco en México, JoAnn Falletta en los Estados Unidos y en Alemania en los Concursos Internacionales de Gevelsberg y Aachen.</p>
   <p>Garibay es considerado como uno de los instrumentistas más notorios de su generación, habiendo concluido sus estudios en la Facultad de Música (FaM) de la Universidad Nacional Autónoma de México (UNAM), y prosiguió su preparación profesional en la Hochschule für Musik Franz Liszt en Weimar, Alemania. Su paso sobresaliente por las aulas le granjeó ser distinguido por la UNAM con la Medalla al Mérito Universitario Gabino Barreda. De igual forma, fue honrado con el Premio Nacional de la Juventud que recibió de manos del Presidente de México en el año 2002.</p>
   <p>Como solista, es invitado frecuentemente por las agrupaciones orquestales más importantes de México que incluyen a la OFUNAM (con la que fue solista en su primera gira europea), la Orquesta Sinfónica Nacional, la OSEM, las Filarmónicas de Búfalo y de la Ciudad de México, la Evgeny Svetlanov Symphony Orchestra en Moscú, la Bundesjugendorchester de Alemania, Virginia Symphony Orchestra, Salzburg Chamber Soloists de Austria y la Orquesta Juvenil Eduardo Mata, colaborando con batutas tan destacadas como las de Clément Nonciaux, Leo Brouwer, Damian Iorio, Lavard Skou Larsen, Jan Latham-König, JoAnn Falletta, Natanael Espinoza, Jesse Levine, Juan Carlos Lomónaco, Iván López Reynoso, Gustavo Rivero Weber, Gordon Campbell, Donato Cabrera, Joan Pagès, Armando Pesqueira, Jesús Medina, José Areán, Samuel Pascoe, Gabriela Díaz Alatriste, Rodrigo Macías, José Luis Castillo y Wolfgang Bozic.</p>

@@ -7,7 +7,7 @@ export const manuelE = new Evento(
   "Cuba - México",
   10,
   "18:00",
-  `
+  /*html*/ `
   <p>Sonata K.208, Domenico Scarlatti (transc. Leo Brouwer)</p>
   <p>Sonata No.74, Carlos Seixas (transc. Javier Hinojosa)</p>
   <p>Suite BWV 995, Juan Sebastian Bach (transc. Eduardo Fernández)</p>
@@ -34,7 +34,7 @@ export const manuelE = new Evento(
     <li>Tocata de Pasquini</li>
   </ul>
   `,
-  `
+  /*html*/ `
   <p>Nacionalizado mexicano, realizó sus estudios musicales en su ciudad natal, La Habana, Cuba. Es graduado del Instituto Superior de Arte.</p>
   <p>Espinás es galardonado en concursos organizados por la Dirección de Enseñanza Artística de Cuba y la Unión de Escritores y Artistas de Cuba; también participa en los festivales internacionales de guitarra de La Habana.</p>
   <p>Ha incursionado en el campo de la composición obteniendo premios nacionales e internacionales. Su obra LABERINTOS para cuarteto de guitarras es premiada en Islas Canarias y llevada al acetato por la firma cubana de discos E.G.R.E.M.</p>

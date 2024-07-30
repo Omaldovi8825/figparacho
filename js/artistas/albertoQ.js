@@ -7,7 +7,7 @@ export const albertoQ = new Evento(
   "México",
   5,
   "17:00",
-  `
+  /*html*/ `
   <p>Tombeau sur la mort de M. Comte de Logy, Sylvius Leopold Weiss (1687 – 1750)</p>
   <p>Suite Española No.1, Op. 47 – V. Asturias, Isaac Albeniz (1860 – 1909)</p>
   <p>Etude No. 8 (Allegretto con motto), Giulio Regondi (1822 – 1872)</p>
@@ -28,7 +28,7 @@ export const albertoQ = new Evento(
     <li>IV. Finale </li>
   </ul>
   `,
-  `
+  /*html*/ `
   <p>Es considerado como uno de los guitarristas más importantes de su generación en el pais. Ha recibido una amplia formación musical, estudiando actualmente como becario en el Master of Music in Performance en la Universidad de Wisconsin-Milwaukee, Estados Unidos, bajo la tutela del prestigiado maestro René Izquierdo, y recibiendo anteriormente distinciones académicas como la Mención Honorífica tras culminar la Licenciatura en Música en el Conservatorio de las Rosas bajo la tutela del maestro Rodrigo Nefthalí.</p>
   <p>Su amplia trayectoria comprende conciertos en el extranjero y reconocimientos nacionales e internacionales. En México ha presentado recitales de guitarra clásica y conciertos solistas con orquesta en importantes escenarios como el Museo Nacional de Arte en la Ciudad de México, el Teatro Ocampo en Morelia, Michoacán, el Teatro Pablo de Villavicencio en Culiacán, Sinaloa, el Teatro Hidalgo en Colima, el Conjunto Santander de Artes escénicas en Guadalajara, entre otros. Además, se ha presentado en diversos escenarios en los Estados Unidos, incluyendo recitales en California, Wisconsin, y en el Latin Guitar Fest en Chicago, Illinois</p>
   <p>Participando en concursos ha obtenido alrededor de 40 premios nacionales e internacionales, entre los cuales destacan los siguientes</p>
