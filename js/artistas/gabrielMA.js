@@ -16,10 +16,7 @@ export const gabrielMA = new Evento(
     <li>Plainté</li>
     <li>Comme un gigue</li>
   </ul>
-  <p>
-    Selección de los XXIV Carpichos de Goya, Mario Castelnuovo
-    Tedesco (1895-1968)
-  </p>
+  <p>Selección de los XXIV Carpichos de Goya, Mario Castelnuovo Tedesco (1895-1968)</p>
   <ul>
     <li>Francisco Goya y lucientes</li>
     <li>Obsequio al maestro</li>

@@ -10,6 +10,10 @@ const estelares = eventos
   .filter(({ tipo }) => tipo === "estelar")
   .sort((a, b) => a.fecha - b.fecha)
 
+const vespertinas = eventos
+  .filter(({ tipo }) => tipo === "vespertino")
+  .sort((a, b) => a.fecha - b.fecha)
+
 createApp({
   components: {
     AcordeonPanel,
@@ -18,7 +22,10 @@ createApp({
   },
   data() {
     return {
-      estelares,
+      eventos: {
+        estelares,
+        vespertinas
+      },
       organizadores,
       idPanel: "main",
     }

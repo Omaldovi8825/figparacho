@@ -28,12 +28,10 @@ export const AcordeonPanel = {
     </div>
   `,
   props: ["target", "parentTarget", "show", "header"],
-  computed: {
-    idTarget() {
-      return `#${this.target}`
-    },
-    idParentTArget() {
-      return `#${this.parentTarget}`
-    },
+  data() {
+    return {
+      idTarget: `#${this.target}`,
+      idParentTArget: `#${this.parentTarget}`,
+    }
   },
 }

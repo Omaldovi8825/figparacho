@@ -19,7 +19,7 @@
         <acordeon-panel
           target="estelares"
           :parent-target="idPanel"
-          :show="true"
+          :show="false"
           header="Conciertos estelares"
         >
           <div class="col-12 mb-3">
@@ -35,7 +35,20 @@
             </p>
           </div>
           <evento-card
-            v-for="evento in estelares"
+            v-for="evento in eventos.estelares"
+            :key="evento.id"
+            :evento="evento"
+          ></evento-card>
+        </acordeon-panel>
+        <!-- Actividades vespertinas -->
+        <acordeon-panel
+          target="vespertinas"
+          :parent-target="idPanel"
+          :show="true"
+          header="Actividades vespertinas"
+        >
+          <evento-card
+            v-for="evento in eventos.vespertinas"
             :key="evento.id"
             :evento="evento"
           ></evento-card>
