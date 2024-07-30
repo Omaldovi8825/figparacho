@@ -1,11 +1,11 @@
-import { Evento } from "../eventoClass.js"
+import { Evento } from "../clases.js"
 
 export const luisAngelSV = new Evento(
   2,
   "luisAngelSV1.JPG",
   "Luis Ángel Salcido Velazco",
   "México",
-  "6 de agosto",
+  6,
   "19:00",
   `
   <ul>

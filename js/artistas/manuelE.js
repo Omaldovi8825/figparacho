@@ -1,11 +1,11 @@
-import { Evento } from "../eventoClass.js"
+import { Evento } from "../clases.js"
 
 export const manuelE = new Evento(
   3,
   "manuelE1.jpg",
   "Manuel Espinás",
   "Cuba - México",
-  "9 de agosto",
+  10,
   "18:00",
   `
   <p>Sonata K.208, Domenico Scarlatti (transc. Leo Brouwer)</p>

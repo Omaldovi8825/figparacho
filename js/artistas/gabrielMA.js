@@ -1,11 +1,11 @@
-import { Evento } from "../eventoClass.js"
+import { Evento } from "../clases.js"
 
 export const gabrielMA = new Evento(
   1,
   "gabrielMA1.jpg",
   "Gabriel Méndez Alarcón",
   "México",
-  "5 de agosto",
+  17,
   "17:00",
   `
   <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>

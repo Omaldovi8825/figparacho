@@ -51,3 +51,7 @@ body {
 .bi::before {
   line-height: unset;
 }
+
+.imgGray {
+  filter: grayscale(1);
+}
