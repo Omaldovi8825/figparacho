@@ -5,6 +5,7 @@ import { organizadores } from "../organizadores.js"
 import { AcordeonPanel } from "../components/AcordeonPanel.js"
 import { EventoCard } from "../components/EventoCard.js"
 import { OrganizadorCard } from "../components/OrganizadorCard.js"
+import { MainMenu } from "../components/Menu.js"
 
 const estelares = eventos
   .filter(({ tipo }) => tipo === "estelar")
@@ -16,6 +17,7 @@ const vespertinas = eventos
 
 createApp({
   components: {
+    MainMenu,
     AcordeonPanel,
     EventoCard,
     OrganizadorCard,
@@ -24,7 +26,7 @@ createApp({
     return {
       eventos: {
         estelares,
-        vespertinas
+        vespertinas,
       },
       organizadores,
       idPanel: "main",
