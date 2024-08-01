@@ -23,34 +23,38 @@ export const MainMenu = {
         </i>
       </button>
     </div>
-    <div
-      v-if="showMenu"
-      class="position-fixed top-0 left-0 vh-100 w-75 z-1 bg2"
-    >
-      <nav>
-        <ul class="list-group list-group-flush py-3 px-2">
-          <menu-item
-            v-for="({titulo, link}) in menuItems"
-            :key:="titulo"
-            :link="link"
-          >
-            {{ titulo }}
-          </menu-item>
-        </ul>
-      </nav>
-    </div>
+    <teleport to="body">
+      <transition>
+        <div
+          v-if="showMenu"
+          class="position-fixed top-0 left-0 vh-100 w-75 z-1 bg2"
+        >
+          <nav>
+            <ul class="list-group list-group-flush py-3 px-2">
+              <menu-item
+                v-for="({titulo, link}) in menuItems"
+                :key:="titulo"
+                :link="link"
+              >
+                {{ titulo }}
+              </menu-item>
+            </ul>
+          </nav>
+        </div>
+        </transition>
+    </teleport>
   `,
   data() {
     return {
       showMenu: false,
       menuItems: [
         {
-          titulo: "Home",
-          link: "./",
+          titulo: "Inicio",
+          link: "/",
         },
         {
           titulo: "Convocatorias",
-          link: "./",
+          link: "/convocatorias/",
         },
         {
           titulo: "Sedes",

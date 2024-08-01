@@ -15,18 +15,44 @@ const vespertinas = eventos
   .filter(({ tipo }) => tipo === "vespertino")
   .sort((a, b) => a.fecha - b.fecha)
 
+const lugarEvento = {
+  template: /*html*/ `
+    <div class="col-12 mb-3">
+      <p class="mb-0 fw-bold">
+        Lugar:
+        <a
+          :href="link"
+          class="color2"
+          target="_blank"
+          >{{ nombre }}
+          <i class="bi bi-geo-fill"></i>
+        </a>
+      </p>
+    </div>
+  `,
+  props: ["nombre", "link"],
+}
+
 createApp({
   components: {
     MainMenu,
     AcordeonPanel,
     EventoCard,
     OrganizadorCard,
+    lugarEvento,
   },
   data() {
     return {
       eventos: {
         estelares,
         vespertinas,
+        extension: {
+          id: 10,
+          artista: "Concierto de alumnos",
+          fecha: 8,
+          hora: "17:00",
+          img: "alumnosCupatitzio.jpg",
+        },
       },
       organizadores,
       idPanel: "main",

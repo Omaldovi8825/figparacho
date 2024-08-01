@@ -24,7 +24,7 @@
           :show="true"
           header="Conciertos estelares"
         >
-          <div class="col-12 mb-3">
+          <!-- <div class="col-12 mb-3">
             <p class="mb-0 fw-bold">
               Lugar:
               <a
@@ -35,7 +35,11 @@
                 <i class="bi bi-geo-fill"></i>
               </a>
             </p>
-          </div>
+          </div> -->
+          <lugar-evento
+            nombre="Auditorio del CIDEG"
+            link="https://maps.app.goo.gl/RW3sV7Bgy11JVVzU8"
+          ></lugar-evento>
           <evento-card
             v-for="evento in eventos.estelares"
             :key="evento.id"
@@ -62,8 +66,11 @@
           :show="false"
           header="Extensión"
         >
-          <div class="col-6">1</div>
-          <div class="col-6">2</div>
+          <lugar-evento
+            nombre="Conservatorio del Cupatitzio"
+            link="https://maps.app.goo.gl/8PckW9Ao7Bs9f5Vo6"
+          ></lugar-evento>
+          <evento-card :evento="eventos.extension"></evento-card>
         </acordeon-panel>
         <!-- Organizadores -->
         <acordeon-panel

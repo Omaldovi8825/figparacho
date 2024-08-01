@@ -43,6 +43,10 @@ body {
   aspect-ratio: 4 / 3;
 }
 
+.aspect-ratio-2-1 {
+  aspect-ratio: 2 / 1;
+}
+
 .accordion-button {
   background-color: var(--color-cuaternario);
   color: white;
@@ -58,4 +62,19 @@ body {
 
 .imgGray {
   filter: grayscale(1);
+}
+
+.fs10 {
+  font-size: 10rem;
+}
+
+/* transitions */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
