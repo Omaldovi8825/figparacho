@@ -2,7 +2,7 @@ import { Evento } from "../clases.js"
 
 export const enriqueG = new Evento(
   9,
-  "enriqueG1.jpg",
+  "enriqueG1.jpeg",
   "Enrique González Martínez",
   "México",
   8,

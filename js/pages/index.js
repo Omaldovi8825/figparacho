@@ -15,6 +15,8 @@ const vespertinas = eventos
   .filter(({ tipo }) => tipo === "vespertino")
   .sort((a, b) => a.fecha - b.fecha)
 
+const extension = eventos.find(({ id }) => id === 10)
+
 const lugarEvento = {
   template: /*html*/ `
     <div class="col-12 mb-3">
@@ -46,13 +48,7 @@ createApp({
       eventos: {
         estelares,
         vespertinas,
-        extension: {
-          id: 10,
-          artista: "Concierto de alumnos",
-          fecha: 8,
-          hora: "17:00",
-          img: "alumnosCupatitzio.jpg",
-        },
+        extension,
       },
       organizadores,
       idPanel: "main",
