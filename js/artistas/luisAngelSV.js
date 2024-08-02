@@ -5,8 +5,8 @@ export const luisAngelSV = new Evento(
   "luisAngelSV1.JPG",
   "Luis Ángel Salcido Velazco",
   "México",
-  6,
-  "19:00",
+  4,
+  "20:00",
   /*html*/ `
   <ul>
     <li>

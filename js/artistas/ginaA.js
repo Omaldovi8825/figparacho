@@ -6,7 +6,7 @@ export const ginaA = new Evento(
   "Gina Arriola",
   "México",
   7,
-  "17:00",
+  "16:00",
   /*html*/ `
   <p>Madmoiselle Bocquet (Principios del siglo XVII - después de 1661)</p>
   <ul>

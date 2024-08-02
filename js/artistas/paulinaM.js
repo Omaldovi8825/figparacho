@@ -6,7 +6,7 @@ export const paulinaM = new Evento(
   "Paulina Menchaca Pérez",
   "México",
   7,
-  "17:00",
+  "16:00",
   /*html*/ `
   <p>Preludio 3, Heitor Villalobos (1887-1959)</p>
   <p>Il tuo aroma, Simone Iannarelli (1970)</p>

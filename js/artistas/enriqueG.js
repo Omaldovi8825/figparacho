@@ -6,7 +6,7 @@ export const enriqueG = new Evento(
   "Enrique González Martínez",
   "México",
   8,
-  "17:00",
+  "16:00",
   /*html*/ `
   <p>Estudio no. 5 (ostinato), Cutberto C. Tapia (1983)</p>
   <p>Suite venezolana, Antonio Lauro (1917-1986)</p>

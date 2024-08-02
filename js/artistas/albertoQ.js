@@ -6,7 +6,7 @@ export const albertoQ = new Evento(
   "Alberto Quintanilla",
   "México",
   5,
-  "17:00",
+  "16:00",
   /*html*/ `
   <p>Tombeau sur la mort de M. Comte de Logy, Sylvius Leopold Weiss (1687 – 1750)</p>
   <p>Suite Española No.1, Op. 47 – V. Asturias, Isaac Albeniz (1860 – 1909)</p>

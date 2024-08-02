@@ -5,8 +5,8 @@ export const gabrielMA = new Evento(
   "gabrielMA1.jpg",
   "Gabriel Méndez Alarcón",
   "México",
-  17,
-  "17:00",
+  5,
+  "20:00",
   /*html*/ `
   <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
   <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>

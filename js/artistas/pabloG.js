@@ -5,8 +5,8 @@ export const pabloG = new Evento(
   "pabloG1.jpg",
   "Pablo Garibay",
   "México",
-  12,
-  "17:30",
+  6,
+  "20:00",
   /*html*/ `
   <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
   <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>

@@ -5,8 +5,8 @@ export const manuelE = new Evento(
   "manuelE1.jpg",
   "Manuel Espinás",
   "Cuba - México",
-  10,
-  "18:00",
+  7,
+  "20:00",
   /*html*/ `
   <p>Sonata K.208, Domenico Scarlatti (transc. Leo Brouwer)</p>
   <p>Sonata No.74, Carlos Seixas (transc. Javier Hinojosa)</p>

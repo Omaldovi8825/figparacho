@@ -6,7 +6,7 @@ export const martinR = new Evento(
   "Martín Rodríguez López",
   "México",
   6,
-  "17:00",
+  "17:30",
   /*html*/ `
   <p>5 preludios, Heitor Villalobos</p>
   <p>Choro da saudade, A. Barrios Mangore </p>
