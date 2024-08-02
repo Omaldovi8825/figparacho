@@ -72,6 +72,16 @@ body {
   font-size: 10rem;
 }
 
+.w-10 {
+  width: 10%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-225 {
+  width: 22.5%;
+}
+
 /* transitions */
 .v-enter-active,
 .v-leave-active {

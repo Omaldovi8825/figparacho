@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGP - cronograma</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <main-menu></main-menu>
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12 mb-4">
+            <h2 class="mb-0 text-center color2">Cronograma de actividades</h2>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <lugar-evento
+            :nombre="sedes[0].nombre"
+            :link="sedes[0].link"
+          ></lugar-evento>
+          <div class="col-12 table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="text-nowrap w-10">Hora / Día</th>
+                  <th class="text-nowrap w-15">Domingo 4</th>
+                  <th class="text-nowrap w-15">Lunes 5</th>
+                  <th class="text-nowrap w-15">Martes 6</th>
+                  <th class="text-nowrap w-15">Miércoles 7</th>
+                  <th class="text-nowrap w-15">Jueves 8</th>
+                  <th class="text-nowrap w-15">Viernes 9</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-nowrap">10:00</td>
+                  <td></td>
+                  <td colspan="2">
+                    Eliminatoria del Concurso Internacional de Guitarra,
+                    categoría Manuel Monroy
+                  </td>
+                  <td colspan="2">
+                    Eliminatoria del Concurso Internacional de Guitarra,
+                    categoría Gildardo Zalapa (Sin límite de edad)
+                  </td>
+                  <td rowspan="3">Concurso categoría Jaime Gómez (infantil)</td>
+                </tr>
+                <tr>
+                  <td>11:30</td>
+                  <td colspan="5" class="text-center">Pausa</td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">12:00</td>
+                  <td></td>
+                  <td colspan="2">
+                    Eliminatoria del Concurso Internacional de Guitarra,
+                    categoría Manuel Monroy
+                  </td>
+                  <td colspan="2">
+                    Eliminatoria del Concurso Internacional de Guitarra,
+                    categoría Gildardo Zalapa (Sin límite de edad)
+                  </td>
+                </tr>
+                <tr>
+                  <td>14:00</td>
+                  <td colspan="6" class="text-center">Pausa</td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">16:00</td>
+                  <td></td>
+                  <td colspan="2">
+                    Eliminatoria del Concurso Internacional de Guitarra,
+                    categoría Manuel Monroy
+                  </td>
+                  <td colspan="2">
+                    Eliminatoria del Concurso Internacional de Guitarra,
+                    categoría Gildardo Zalapa (Sin límite de edad)
+                  </td>
+                  <td>
+                    Final del Concurso Internacional de Guitarra, categoría
+                    Gildardo Zalapa
+                  </td>
+                </tr>
+                <tr>
+                  <td>20:00</td>
+                  <td>
+                    Inauguración y concierto a cargo de Ángel Salcido Velázco
+                  </td>
+                  <td>
+                    Concierto - Gabriel Méndez Alarcón y homenaje al maestro
+                    Carlos Piña
+                  </td>
+                  <td>Concierto - Pablo Garibay</td>
+                  <td>Concierto - Manuel Espinás</td>
+                  <td>Concierto - David Mozqueda y Nury Ulate</td>
+                  <td>Premiación y clausura</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <lugar-evento
+            :nombre="sedes[1].nombre"
+            :link="sedes[1].link"
+          ></lugar-evento>
+          <div class="col-12 table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="text-nowrap w-10">Hora / Día</th>
+                  <th class="text-nowrap w-225">Lunes 5</th>
+                  <th class="text-nowrap w-225">Martes 6</th>
+                  <th class="text-nowrap w-225">Miércoles 7</th>
+                  <th class="text-nowrap w-225">Jueves 8</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-nowrap">10:00 - 13:00</td>
+                  <td></td>
+                  <td colspan="3" class="text-center">
+                    Dinámicas con lauderos con Natalia Tarquino
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">16:00</td>
+                  <td>Concierto - Alberto Quintanilla</td>
+                  <td>
+                    Mesa redonda de lauderos: Pedro Rubio, Carlos Piña, Fer
+                    González
+                  </td>
+                  <td>Concierto - Gina Arriola y Paulina Menchaca</td>
+                  <td>Concierto - Luis Enrique González</td>
+                </tr>
+                <tr>
+                  <td class="text-nowrap">17:30</td>
+                  <td></td>
+                  <td>Concierto - Martín Rodríguez</td>
+                  <td>
+                    Recital - presentación de productos Sonatina con Alfredo
+                    Amezcua
+                  </td>
+                  <td>
+                    Presentación de nueva línea Sonatina "Elements" con
+                    participación de Eddy Lara como concertista
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <copy-right></copy-right>
+    </div>
+    <script src="./js/pages/cronograma.js" type="module"></script>
+  </body>
+</html>

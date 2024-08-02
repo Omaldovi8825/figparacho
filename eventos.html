@@ -37,58 +37,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="container mt-3">
-        <div v-if="evento.tipo !== 'extension'" class="row g-4">
-          <div class="col-12">
-            <h3 class="mb-0 text-center bg1 text-white py-2">
-              {{ evento.artista }} - ({{ evento.pais }})
-            </h3>
-          </div>
-          <div class="col-12 col-md-6">
-            <img
-              :src="urlArtista"
-              alt="nombre artista"
-              class="w-100 h-100 object-fit-cover rounded-3"
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="h-100 bgLight p-3 rounded-3">
-              <h4 class="text-center mb-3">Programa</h4>
-              <div v-html="evento.programa"></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <h4 class="bg2 text-white py-2 px-3">Reseña</h4>
-            <div v-html="evento.cv"></div>
-          </div>
-        </div>
-        <div v-else class="row">
-          <div class="col-12">
-            <h3 class="mb-0 text-center bg1 text-white py-2 mb-3">
-              {{ evento.artista }} - Conservatorio del Cupatitzio
-            </h3>
-          </div>
-          <div v-for="artista in evento.artistas" class="col-12 mb-3">
-            <div class="row gx-0 rounded-3 overflow-hidden">
-              <div class="col-12 col-md-6 col-lg-5 position-relative">
-                <img
-                  :src="`./assets/img/${artista.img}`"
-                  alt="artista"
-                  class="w-100 aspect-ratio-4-3 object-fit-cover"
-                />
-                <span
-                  class="w-100 d-block bg2 text-white p-1 text-center position-absolute bottom-0 left-0"
-                  >{{ artista.artista }}</span
-                >
-              </div>
-              <div class="col-12 col-md-6 col-lg-7 bgLight p-3">
-                <h5 class="text-center mb-3">Programa</h5>
-                <div v-html="artista.programa"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
       <copy-right></copy-right>
     </div>
     <script src="./js/pages/eventos.js" type="module"></script>

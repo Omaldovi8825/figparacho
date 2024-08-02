@@ -57,6 +57,10 @@ export const MainMenu = {
           titulo: "Convocatorias",
           link: "/convocatorias.html",
         },
+        {
+          titulo: "Cronograma",
+          link: "/cronograma.html",
+        },
       ],
     }
   },
