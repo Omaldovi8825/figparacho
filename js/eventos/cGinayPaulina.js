@@ -7,7 +7,7 @@ export const cGinaYPaulina = new Concierto(
   "Gina y Paulina",
   7,
   "16:00",
-  "paulinaYgina.jpg",
+  "ginaYpaulina.jpg",
   [paulinaM, ginaA],
   null,
   "vespertino"
