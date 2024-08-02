@@ -3,7 +3,7 @@ import { Organizador } from "../clases.js"
 export const alfredoAJ = new Organizador(
   1,
   "J. Alfredo Amezcua",
-  "alfredoAJ1.jpg",
+  "alfredoA1.jpg",
   `
   <p>Descendiente de una familia de artesanos y constructores de instrumentos de cuerda pulsada, Alfredo Amezcua es considerado por la crítica como uno de los jóvenes intérpretes representantes de la guitarra clásica mexicana. Poseedor de una versátil técnica y una particular intuición en la expresión, cuenta con una trayectoria que suman 12 primeros premios en concursos de interpretación tanto en México como en Europa, así como una sólida experiencia escénica desde los 7 años de edad.</p>
   <p>Nació en Paracho, Michoacán, México, un 13 de julio de 1992. Comenzó sus estudios musicales en el Centro para la Investigación y Desarrollo de la Guitarra (CIDEG) a la edad de 6 años bajo la dirección del maestro Jaime Gómez, posteriormente recibe clases de los maestros Salvador Díaz y Francisco Galindo. En 2007 ingresa al Conservatorio de Música del Edo. de México para estudiar con el maestro Sergio Wilson y en 2018 se convierte en pasante del Conservatorio de las Rosas, siendo alumno del maestro Rodrigo Nefthalí.</p>

@@ -12,8 +12,7 @@ import { CopyRight } from "../components/Copyright.js"
 const estelares = eventos
   .filter(({ tipo }) => tipo === "estelar")
   .sort((a, b) => a.fecha - b.fecha)
-
-const vespertinas = eventos
+const vespertinos = eventos
   .filter(({ tipo }) => tipo === "vespertino")
   .sort((a, b) => a.fecha - b.fecha)
 
@@ -44,14 +43,16 @@ createApp({
     EventoCard,
     OrganizadorCard,
     lugarEvento,
-    CopyRight
+    CopyRight,
   },
   data() {
     return {
       eventos: {
-        estelares,
-        vespertinas,
-        extension,
+        conciertos: {
+          estelares,
+          vespertinos,
+          extension,
+        },
       },
       organizadores,
       sedes,

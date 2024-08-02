@@ -9,6 +9,7 @@
   --color-cuaternario: #ff6365;
   --color-light: #f2dfdf;
   --color-dark: #061504;
+  --color-gray: #dfdfdf;
 }
 
 body {
@@ -33,6 +34,9 @@ body {
 }
 .bgDark {
   background-color: var(--color-dark);
+}
+.bgGray {
+  background-color: var(--color-gray);
 }
 
 .color2 {

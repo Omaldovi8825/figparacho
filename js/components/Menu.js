@@ -28,6 +28,7 @@ export const MainMenu = {
         <div
           v-if="showMenu"
           class="position-fixed top-0 left-0 vh-100 w-75 z-3 bg2"
+          style="max-width: 400px"
         >
           <nav>
             <ul class="list-group list-group-flush py-3 px-2">

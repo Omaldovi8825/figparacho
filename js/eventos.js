@@ -1,31 +1,21 @@
-import { gabrielMA } from "./artistas/gabrielMA.js"
-import { luisAngelSV } from "./artistas/luisAngelSV.js"
-import { manuelE } from "./artistas/manuelE.js"
-import { pabloG } from "./artistas/pabloG.js"
-import { albertoQ } from "./artistas/albertoQ.js"
-import { martinR } from "./artistas/martinR.js"
-import { ginaA } from "./artistas/ginaA.js"
-import { paulinaM } from "./artistas/paulinaM.js"
-import { enriqueG } from "./artistas/enriqueG.js"
-
-const extension = {
-  id: 10,
-  artista: "Concierto de alumnos",
-  fecha: 8,
-  hora: "17:00",
-  img: "alumnosCupatitzio.jpg",
-  tipo: "extension",
-}
+import { cAngelS } from "./eventos/cAngelS.js"
+import { cGabrielM } from "./eventos/cGabrielM.js"
+import { cPabloG } from "./eventos/cPabloG.js"
+import { cManuelE } from "./eventos/cManuelE.js"
+import { cAlbertoQ } from "./eventos/cAlbertoQ.js"
+import { cMartinR } from "./eventos/cMartinR.js"
+import { cGinaYPaulina } from "./eventos/cGinayPaulina.js"
+import { cEnriqueG } from "./eventos/cEnriqueG.js"
+import { cAlumnosCupatitzio } from "./eventos/cAlumnosCupatitzio.js"
 
 export const eventos = [
-  gabrielMA,
-  luisAngelSV,
-  manuelE,
-  pabloG,
-  albertoQ,
-  martinR,
-  ginaA,
-  paulinaM,
-  enriqueG,
-  extension,
+  cAngelS,
+  cGabrielM,
+  cPabloG,
+  cManuelE,
+  cAlbertoQ,
+  cMartinR,
+  cGinaYPaulina,
+  cEnriqueG,
+  cAlumnosCupatitzio,
 ]

@@ -1,13 +1,29 @@
-export class Evento {
-  constructor(id, img, artista, pais, fecha, hora, programa, cv, tipo) {
+export class Artista {
+  constructor(id, img, nombre, pais, cv, programa) {
     this.id = id
     this.img = img
-    this.artista = artista
+    this.nombre = nombre
     this.pais = pais
+    this.cv = cv
+    this.programa = programa
+  }
+}
+
+export class Evento {
+  constructor(id, nombre, fecha, hora, img) {
+    this.id = id
+    this.nombre = nombre
     this.fecha = fecha
     this.hora = hora
+    this.img = img
+  }
+}
+
+export class Concierto extends Evento {
+  constructor(id, nombre, fecha, hora, img, artistas, programa, tipo) {
+    super(id, nombre, fecha, hora, img)
+    this.artistas = artistas
     this.programa = programa
-    this.cv = cv
     this.tipo = tipo
   }
 }

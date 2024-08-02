@@ -29,7 +29,7 @@
             :link="sedes[0].link"
           ></lugar-evento>
           <evento-card
-            v-for="evento in eventos.estelares"
+            v-for="evento in eventos.conciertos.estelares"
             :key="evento.id"
             :evento="evento"
           ></evento-card>
@@ -46,7 +46,7 @@
             :link="sedes[2].link"
           ></lugar-evento>
           <evento-card
-            v-for="evento in eventos.vespertinas"
+            v-for="evento in eventos.conciertos.vespertinos"
             :key="evento.id"
             :evento="evento"
           ></evento-card>
@@ -62,7 +62,7 @@
             :nombre="sedes[2].nombre"
             :link="sedes[2].link"
           ></lugar-evento>
-          <evento-card :evento="eventos.extension"></evento-card>
+          <evento-card :evento="eventos.conciertos.extension"></evento-card>
         </acordeon-panel>
         <!-- Organizadores -->
         <acordeon-panel
@@ -78,7 +78,7 @@
           ></organizador-card>
         </acordeon-panel>
       </div>
-      <section class="bg3">
+      <section v-if="false" class="bg3">
         <div class="container pt-4">
           <div class="row">
             <div class="col-12">

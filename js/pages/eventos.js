@@ -10,16 +10,11 @@ const evento = eventos.find(({ id }) => id === idEvento)
 createApp({
   components: {
     MainMenu,
-    CopyRight
+    CopyRight,
   },
   data() {
     return {
       evento,
     }
-  },
-  computed: {
-    urlArtista() {
-      return `./assets/img/${this.evento.img}`
-    },
   },
 }).mount("#app")

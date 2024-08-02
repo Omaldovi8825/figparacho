@@ -3,7 +3,7 @@ export const EventoCard = {
     <div class="col-12 col-md-6 col-lg-4 mb-3">
       <div class="rounded-3 overflow-hidden">
         <h5 class="mb-0 bg1 text-end text-white p-2">
-          {{ evento.artista }}
+          {{ nombreEvento }}
         </h5>
         <img
           class="w-100 aspect-ratio-4-3 object-fit-cover"
@@ -29,7 +29,8 @@ export const EventoCard = {
   props: ["evento"],
   data() {
     return {
-      imgUrl: `./assets/img/${this.evento.img}`,
+      nombreEvento: this.evento.nombre || this.evento.artistas[0].nombre,
+      imgUrl: `./assets/img/${this.evento.img || this.evento.artistas[0].img}`,
       linkUrl: `./eventos.html?id=${this.evento.id}`,
     }
   },
