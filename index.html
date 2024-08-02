@@ -24,21 +24,9 @@
           :show="true"
           header="Conciertos estelares"
         >
-          <!-- <div class="col-12 mb-3">
-            <p class="mb-0 fw-bold">
-              Lugar:
-              <a
-                href="https://maps.app.goo.gl/RW3sV7Bgy11JVVzU8"
-                class="color2"
-                target="_blank"
-                >Auditorio del CIDEG
-                <i class="bi bi-geo-fill"></i>
-              </a>
-            </p>
-          </div> -->
           <lugar-evento
-            nombre="Auditorio del CIDEG"
-            link="https://maps.app.goo.gl/RW3sV7Bgy11JVVzU8"
+            :nombre="sedes[0].nombre"
+            :link="sedes[0].link"
           ></lugar-evento>
           <evento-card
             v-for="evento in eventos.estelares"
@@ -54,8 +42,8 @@
           header="Actividades vespertinas"
         >
           <lugar-evento
-            nombre="Sala Manuel López Ramos"
-            link="https://maps.app.goo.gl/KiidNBthf5EzAVeWA"
+            :nombre="sedes[1].nombre"
+            :link="sedes[2].link"
           ></lugar-evento>
           <evento-card
             v-for="evento in eventos.vespertinas"
@@ -71,8 +59,8 @@
           header="Extensión"
         >
           <lugar-evento
-            nombre="Conservatorio del Cupatitzio"
-            link="https://maps.app.goo.gl/8PckW9Ao7Bs9f5Vo6"
+            :nombre="sedes[2].nombre"
+            :link="sedes[2].link"
           ></lugar-evento>
           <evento-card :evento="eventos.extension"></evento-card>
         </acordeon-panel>
@@ -90,6 +78,32 @@
           ></organizador-card>
         </acordeon-panel>
       </div>
+      <section class="bg3">
+        <div class="container pt-4">
+          <div class="row gx-5">
+            <div class="col-12">
+              <h3 class="text-white mb-3">Sedes</h3>
+            </div>
+            <div
+              v-for="({id, nombre, link, iFrame}) in sedes"
+              :key="id"
+              class="col-12 col-md-6 col-lg-4 mb-4"
+            >
+              <a :href="link" class="fs-5 text-white d-block mb-2">
+                {{ nombre }}
+                <i class="bi bi-geo-fill"></i>
+              </a>
+              <iframe
+                :src="iFrame"
+                class="w-100 rounded-2 aspect-ratio-4-3"
+                allowfullscreen=""
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <copy-right></copy-right>
     </div>
 
     <script src="./js/pages/index.js" type="module"></script>

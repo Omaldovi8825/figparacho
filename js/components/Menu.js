@@ -14,7 +14,7 @@ export const MainMenu = {
     MenuItem,
   },
   template: /*html*/ `
-    <div class="position-sticky top-0 bgDark text-end pe-2">
+    <header class="position-sticky top-0 bgDark text-end pe-2">
       <button class="bg-transparent p-0 border-0" @click="abrirMenu">
         <i
           class="bi text-white fs-1"
@@ -22,12 +22,12 @@ export const MainMenu = {
         >
         </i>
       </button>
-    </div>
+    </header>
     <teleport to="body">
       <transition>
         <div
           v-if="showMenu"
-          class="position-fixed top-0 left-0 vh-100 w-75 z-1 bg2"
+          class="position-fixed top-0 left-0 vh-100 w-75 z-3 bg2"
         >
           <nav>
             <ul class="list-group list-group-flush py-3 px-2">
@@ -55,10 +55,6 @@ export const MainMenu = {
         {
           titulo: "Convocatorias",
           link: "/convocatorias.html",
-        },
-        {
-          titulo: "Sedes",
-          link: "/",
         },
       ],
     }

@@ -43,10 +43,11 @@ export class Convocatoria {
   }
 }
 
-// limiteEdad
-//       ? `con un límite de edad de ${limiteEdad} años cumplidos al día de la premiación del concurso, sin distinción de nacionalidad`
-//       : "y sin límite de edad"
-
-// limiteEdad
-//       ? `con un límite de edad de ${limiteEdad} años cumplidos al día de la premiación del concurso, sin distinción de nacionalidad`
-//       : "de cualquier nacionalidad y sin límite de edad"
+export class Sede {
+  constructor(id, nombre, link, iFrame) {
+    this.id = id
+    this.nombre = nombre
+    this.link = link
+    this.iFrame = iFrame
+  }
+}

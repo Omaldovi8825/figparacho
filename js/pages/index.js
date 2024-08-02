@@ -2,10 +2,12 @@
 const { createApp } = Vue
 import { eventos } from "../eventos.js"
 import { organizadores } from "../organizadores.js"
+import { sedes } from "../sedes.js"
 import { AcordeonPanel } from "../components/AcordeonPanel.js"
 import { EventoCard } from "../components/EventoCard.js"
 import { OrganizadorCard } from "../components/OrganizadorCard.js"
 import { MainMenu } from "../components/Menu.js"
+import { CopyRight } from "../components/Copyright.js"
 
 const estelares = eventos
   .filter(({ tipo }) => tipo === "estelar")
@@ -42,6 +44,7 @@ createApp({
     EventoCard,
     OrganizadorCard,
     lugarEvento,
+    CopyRight
   },
   data() {
     return {
@@ -51,6 +54,7 @@ createApp({
         extension,
       },
       organizadores,
+      sedes,
       idPanel: "main",
     }
   },
