@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg" />
     <title>FIGP - convocatorias</title>
     <link rel="stylesheet" href="./assets/main.css" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -353,14 +353,16 @@
           <div
             v-for="({id, nombre}) in convocatorias"
             :key="id"
-            class="col-12 col-md-6 col-lg-4 mb-4"
+            class="col-12 mb-4 d-flex justify-content-center"
           >
-            <a
-              :href="`/convocatorias.html?id=${id}`"
-              class="text-decoration-none"
+            <div
+              class="w-100 rounded-3 overflow-hidden"
+              style="max-width: 500px"
             >
-              <!-- <i class="bi bi-file-text d-block fs10 color2"></i> -->
-              <div class="rounded-3 overflow-hidden">
+              <a
+                :href="`/convocatorias.html?id=${id}`"
+                class="text-decoration-none"
+              >
                 <img
                   src="../assets/img/logo1.jpg"
                   alt="logo paracho"
@@ -369,8 +371,8 @@
                 <span class="d-block bg2 text-white fs-3 py-2 text-center"
                   >{{ nombre }}</span
                 >
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -30,5 +30,27 @@ export const alfredoA = new Artista(
     <p>Por su amplia trayectoria, ha sido acreedor al Premio Municipal de la Juventud de la Ciudad de Morelia (2011), un reconocimiento de “Ciudadano Distinguido” por parte del Ayuntamiento de Paracho, Premio Estatal al Mérito Juvenil entregado de manos del gobernador de Michoacán (2009), y el premio “José Tocavén Labín” otorgado por el diario “La Voz de Michoacán”.</p>
     <p>Como parte del premio del Concurso Internacional de Culiacán, entre 2015 y 2016 recibió el patrocinio de la Fundación Cultural de la Guitarra A.C. para grabar en solista para el sello AdLib Music el material discográfico “Gran Recital”, el cual cuenta con distribución internacional y actualmente está disponible en las galerías de Spotify, Itunes, Amazon, entre otras.</p>
     <p>En junio de 2021 finalizó sus estudios en el “Master en Interpretación de Guitarra Clásica” de la Universidad de Alicante, España. Así mismo, desde diciembre de 2021, comienza su contrato con el Fondo Nacional para la Cultura y las Artes para hacer una gira de conciertos en Costa Rica, Colombia, y diferentes estados de la república mexicana. Actualmente es alumno de postgrado en la Akademie fur Tonkunst (Academia para las Artes Tonales) de Darmstadt, Alemania, teniendo como profesor al legendario guitarrista, compositor y transcriptor, Tilman Hoppstock, al mismo tiempo que se desempeña como Director Artístico y Coordinador General del Festival y Concurso Internacional de Guitarra de Paracho.</p>
+  `,
+  /*html*/ `
+    <p>Agustín Barrios Mangoré (1985 - 1944)</p>
+    <ul>
+      <li>Un Sueño en la Floresta</li>
+    </ul>
+    <p>Tilman Hoppstock (1961)</p>
+    <ul>
+      <li>Variaciones sobre un Tema de Debussy</li>
+    </ul>
+    <p>Astor Piazzolla (1921-1992)</p>
+    <ul>
+      <li>Invierno Porteño, *transcripción de Sergio Assad</li>
+    </ul>
+    <p>Roland Dyens (1954 - 2016)</p>
+    <ul>
+      <li>Sonatina Libra</li>
+      <ul>
+        <li>Largo</li>
+        <li>Fuoco</li>
+      </ul>
+    </ul>
   `
 )

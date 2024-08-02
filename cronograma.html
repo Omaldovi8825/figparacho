@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg" />
     <title>FIGP - cronograma</title>
     <link rel="stylesheet" href="./assets/main.css" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -26,7 +26,7 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th class="text-nowrap w-10">Hora / Día</th>
+                  <th class="text-nowrap">Hora / Día</th>
                   <th class="text-nowrap w-15">Domingo 4</th>
                   <th class="text-nowrap w-15">Lunes 5</th>
                   <th class="text-nowrap w-15">Martes 6</th>
@@ -103,7 +103,7 @@
             </table>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-5">
           <lugar-evento
             :nombre="sedes[1].nombre"
             :link="sedes[1].link"
@@ -112,7 +112,7 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th class="text-nowrap w-10">Hora / Día</th>
+                  <th class="text-nowrap">Hora / Día</th>
                   <th class="text-nowrap w-225">Lunes 5</th>
                   <th class="text-nowrap w-225">Martes 6</th>
                   <th class="text-nowrap w-225">Miércoles 7</th>
@@ -150,6 +150,32 @@
                     participación de Eddy Lara como concertista
                   </td>
                 </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row">
+          <lugar-evento
+            :nombre="sedes[2].nombre"
+            :link="sedes[2].link"
+          ></lugar-evento>
+          <div class="col-12 table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th class="text-nowrap w-25">Hora / Día</th>
+                  <th class="text-nowrap w-75">jueves 8</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-nowrap">17:00</td>
+                  <td>
+                    Concierto de Alumnos de Guitarra del Conservatorio del
+                    Cupatitzio
+                  </td>
+                </tr>
+                <tr></tr>
               </tbody>
             </table>
           </div>
