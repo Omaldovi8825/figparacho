@@ -58,7 +58,7 @@ export const MainMenu = {
         },
         {
           titulo: "Sedes",
-          link: "./",
+          link: "/",
         },
       ],
     }
