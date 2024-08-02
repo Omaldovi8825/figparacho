@@ -15,7 +15,7 @@ const vespertinas = eventos
   .filter(({ tipo }) => tipo === "vespertino")
   .sort((a, b) => a.fecha - b.fecha)
 
-const extension = eventos.find(({ id }) => id === 10)
+const extension = eventos.find(({ tipo }) => tipo === "extension")
 
 const lugarEvento = {
   template: /*html*/ `

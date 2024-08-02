@@ -54,7 +54,7 @@ export const MainMenu = {
         },
         {
           titulo: "Convocatorias",
-          link: "/convocatorias/",
+          link: "/convocatorias.html",
         },
         {
           titulo: "Sedes",

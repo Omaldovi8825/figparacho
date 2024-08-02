@@ -14,6 +14,7 @@ const extension = {
   fecha: 8,
   hora: "17:00",
   img: "alumnosCupatitzio.jpg",
+  tipo: "extension",
 }
 
 export const eventos = [

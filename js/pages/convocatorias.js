@@ -1,5 +1,9 @@
 const { createApp } = Vue
+import { convocatorias } from "../convocatorias.js"
 import { MainMenu } from "../components/Menu.js"
+
+const queryParams = new URLSearchParams(window.location.search)
+const idConvocatoria = Number(queryParams.get("id"))
 
 createApp({
   components: {
@@ -7,20 +11,12 @@ createApp({
   },
   data() {
     return {
-      convocatorias: [
-        {
-          id: 1,
-          nombre: "Manuel Monroy",
-        },
-        {
-          id: 2,
-          nombre: "Gildardo Zalapa",
-        },
-        {
-          id: 3,
-          nombre: "Jaime Gómez",
-        },
-      ],
+      convocatorias: convocatorias.sort((a, b) => a.id - b.id),
     }
+  },
+  computed: {
+    convocatoria() {
+      return this.convocatorias.find(({ id }) => id === idConvocatoria)
+    },
   },
 }).mount("#app")

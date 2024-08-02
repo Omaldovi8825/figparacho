@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGP - convocatorias</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <main-menu></main-menu>
+      <div class="container mt-3">
+        <!-- Convocatoria -->
+        <div v-if="convocatoria" class="row">
+          <div class="col-12">
+            <h5 class="text-center mb-3">
+              CONVOCATORIA AL CONCURSO INTERNACIONAL DE EJECUANTES DE GUITARRA
+              EN LA CATEGORIA {{ convocatoria.nombre.toUpperCase() }} DEL
+            </h5>
+            <h5 class="text-center fw-bold color2 mb-3">
+              FESTIVAL INTERNACIONAL DE GUITARRA DE PARACHO 2024
+            </h5>
+            <p>
+              El Gobierno Municipal de Paracho 2021-2024 a través de la
+              Dirección de Educación, Cultura y Fomento Turístico, la Regiduría
+              de Educación, Cultura y Turismo, y el Comité Organizador del
+              Festival Internacional de Guitarra de Paracho, con el fin de
+              contribuir al desarrollo de la guitarrería Parachense como fin de
+              sostenibilidad económica a través del acercamiento del mercado
+              hacia la mano fabricante de las guitarras.
+            </p>
+            <h5 class="text-center fw-bold color2 mb-3">CONVOCA A:</h5>
+            <p>
+              Todos los guitarristas clásicos de cualquier nacionalidad {{
+              convocatoria.limiteEdad ? `que tengan menos de
+              ${convocatoria.limiteEdad} años cumplidos al día de la premiación`
+              : `y sin límite de edad` }} a participar en el concurso
+              internacional de guitarra de Paracho 2024 en la categoría {{
+              convocatoria.nombre }} bajo las siguientes:
+            </p>
+            <h5 class="fw-bold color2">BASES</h5>
+            <ol class="mb-5">
+              <li class="mb-2">
+                Podrán participar guitarristas clásicos {{
+                convocatoria.limiteEdad ? `con un límite de edad de
+                ${convocatoria.limiteEdad} años cumplidos al día de la
+                premiación del concurso, sin distinción de nacionalidad` : `de
+                cualquier nacionalidad y sin límite de edad` }}.
+              </li>
+              <li class="mb-2">
+                No podrán participar los ganadores del primer lugar de las
+                ediciones 2022 y 2023 del Concurso Internacional de Guitarra de
+                Paracho de la presente categoría ({{
+                convocatoria.categoriaAnterior ? `antes
+                ${convocatoria.categoriaAnterior}` : convocatoria.nombre }}).
+              </li>
+              <li class="mb-2">
+                Al inscribirse todos los participantes aceptan los términos,
+                condiciones y bases presentes en esta convocatoria.
+              </li>
+              <li class="mb-2">
+                Los participantes autorizan al Gobierno Municipal, La Dirección
+                de Cultura y Turismo de Paracho, y al Comité Organizador, el uso
+                de su imagen durante el festival y concurso, para fines de
+                promoción digital y/o impresa, en las modalidades de audio,
+                fotografía y video.
+              </li>
+              <li class="mb-2">
+                El cierre de la presente convocatoria es a las 16:00 horas (del
+                centro de México) del sábado 3 de agosto de 2024. No habrá
+                prórrogas.
+              </li>
+              <li class="mb-4">
+                La categoría "{{ convocatoria.nombre }}"" será desarrollada en
+                {{ convocatoria.fases.eliminatoria ? `2 fases abiertas` : `una
+                única fase abierta`}} al público en las instalaciones del Centro
+                para la Investigación y Desarrollo de la Guitarra (CIDEG),
+                ubicado en calle Nicolás Bravo esquina con Miguel Hidalgo #39,
+                Zona Centro. C.P. 60250 Paracho, Michoacán.
+              </li>
+              <!-- FASES -->
+              <div v-if="convocatoria.fases.eliminatoria">
+                <h5 class="fw-bold color2">Eliminatoria</h5>
+                <li class="mb-2">
+                  La fase eliminatoria será llevada a cabo {{
+                  convocatoria.fases.eliminatoria.fecha }} de agosto de 2024.
+                </li>
+                <li class="mb-2">
+                  De {{ convocatoria.fases.eliminatoria.duracion }} minutos de
+                  repertorio libre.
+                </li>
+                <li class="mb-2">
+                  Cada participante podría disponer de hasta {{
+                  convocatoria.fases.eliminatoria.tiempoMaximo }} minutos en
+                  total sobre el escenario para: presentación, acomodo,
+                  afinación e interpretación de las obras musicales.
+                </li>
+                <li class="mb-2">
+                  El concursante puede elegir entre leer o interpretar de
+                  memoria durante su participación.
+                </li>
+                <li class="mb-2">
+                  En caso de interpretar diversas piezas, estas deberán
+                  pertenecer a estilos y/o períodos distintos.
+                </li>
+                <li class="mb-4">
+                  El número de finalistas estará sujeto a la consideración del
+                  jurado.
+                </li>
+                <h5 class="fw-bold color2">Final</h5>
+                <li class="mb-2">
+                  La fase final se desarrollará el {{
+                  convocatoria.fases.final.fecha }} de agosto de 2024.
+                </li>
+                <li class="mb-2">
+                  De {{ convocatoria.fases.final.duracion }} minutos de
+                  repertorio libre
+                  <span v-if="convocatoria.fases.final.obraMexicana"
+                    >incluyendo una obra o parte de ella de un compositor
+                    mexicano</span
+                  >
+                </li>
+                <li class="mb-2">
+                  Cada participante podrá disponer de {{
+                  convocatoria.fases.final.tiempoMaximo }} minutos en total
+                  sobre el escenario para: presentación, acomodo, afinación e
+                  interpretación de las obras musicales.
+                </li>
+                <li class="mb-2">
+                  El concursante puede elegir entre leer o interpretar de
+                  memoria durante su participación.
+                </li>
+                <li class="mb-2">
+                  En caso de interpretar varias piezas estas deberán pertenecer
+                  a estilos y/o periodos distintos.
+                </li>
+                <li class="mb-4">
+                  El repertorio elegido para la fase final deberá ser distinto
+                  al presentado en la fase eliminatoria.
+                </li>
+              </div>
+              <!-- Ronda única -->
+              <div v-else>
+                <h5 class="fw-bold color2">Ronda única</h5>
+                <li class="mb-2">
+                  Será llevada a cabo el día viernes {{
+                  convocatoria.fases.unica.fecha }} de agosto de 2024, a partir
+                  de las 10:00 de la mañana.
+                </li>
+                <li class="mb-2">
+                  De {{ convocatoria.fases.unica.duracion }} minutos de
+                  repertorio libre.
+                </li>
+                <li class="mb-2">
+                  Cada participante podría disponer de hasta {{
+                  convocatoria.fases.unica.tiempoMaximo }} minutos en total
+                  sobre el escenario para: presentación, acomodo, afinación e
+                  interpretación de las obras musicales.
+                </li>
+                <li class="mb-4">
+                  El concursante puede elegir entre leer o interpretar de
+                  memoria durante su participación.
+                </li>
+              </div>
+              <!-- PREMIOS -->
+              <h5 class="fw-bold color2">De los premios</h5>
+              <li class="mb-2">
+                La entrega de premios y reconocimientos será durante la clausura
+                del festival, el día 9 de agosto a las 20:00 horas en las
+                instalaciones del CIDEG.
+              </li>
+              <li class="mb-2">
+                Los jueces deberán otorgar los tres premios, sin posibilidad de
+                declarar empates o lugares desiertos.
+              </li>
+              <li v-if="[0,20].includes(convocatoria.limiteEdad)" class="mb-2">
+                Los participantes deberán estar presentes al momento de la
+                premiación, ya que el Gobierno Municipal de Paracho por ningún
+                motivo entregará premios a familiares o representantes (excepto
+                en menores de edad) de los ganadores, siendo necesario para el
+                participante presentar una identificación oficial con
+                fotografía, vigente.
+              </li>
+              <li v-else class="mb-2">
+                Los ganadores deberán estar presentes al momento de la
+                premiación acompañados de un padre o tutor con identificación
+                oficial vigente para la correcta entrega de premios.
+              </li>
+              <li class="mb-2">
+                Los premios serán otorgados en efectivo o cheque.
+              </li>
+              <li class="mb-2">
+                El Gobierno Municipal de Paracho otorgara una bolsa de premios
+                de ${{ convocatoria.premios.total.cifra }} ({{
+                convocatoria.premios.total.texto }} pesos 00/100 M.N.) en un
+                total de 3 premios, distribuidos de la siguiente manera:
+              </li>
+              <ol type="a" class="mb-4">
+                <li class="mb-2">
+                  <span class="fw-bold color2">Primer lugar</span> ${{
+                  convocatoria.premios.primero.cifra }} {{
+                  convocatoria.premios.primero.texto }} pesos 00/100 M.N.
+                </li>
+                <li class="mb-2">
+                  <span class="fw-bold color2">Segundo lugar</span> ${{
+                  convocatoria.premios.segundo.cifra }} {{
+                  convocatoria.premios.segundo.texto }} pesos 00/100 M.N
+                </li>
+                <li>
+                  <span class="fw-bold color2">Tercer lugar</span> ${{
+                  convocatoria.premios.tercero.cifra }} {{
+                  convocatoria.premios.tercero.texto }} pesos 00/100 M.N.
+                </li>
+              </ol>
+              <h5 class="fw-bold color2">De la inscripción</h5>
+              <p class="mb-4">
+                El proceso de inscripción constará de dos pasos:
+              </p>
+              <h5 class="fw-bold color2">Registro</h5>
+              <li class="mb-2">
+                Enviar al correo electrónico cigparacho@gmail.com la siguiente
+                documentación:
+              </li>
+              <li class="mb-2">
+                <a
+                  href="./assets/docs/ficha_inscripcion.pdf"
+                  target="_blank"
+                  class="color2"
+                  >Ficha de inscripción</a
+                >
+                llenada y firmada, escaneada en formato PDF.
+              </li>
+              <li class="mb-2">
+                Scanner de Identificación oficial con fotografía en formato PDF
+                (pasaporte, visa, INE, etc.) del concursante o de su padre o
+                tutor (en caso de ser menor de edad).
+              </li>
+              <li class="mb-2">Currículum artístico.</li>
+              <li class="mb-2">Fotografía con guitarra.</li>
+              <li class="mb-4">
+                Programa a interpretar para ambas rondas con la siguiente
+                estructura: Compositor con año de nacimiento y muerte (en su
+                caso), nombre de la obra-movimientos. Ejemplos:
+              </li>
+              <div class="text-center mb-4">
+                <div class="mb-3">
+                  <p class="mb-1">Ejemplo a)</p>
+                  <p class="mb-0">Agustín Barrios Mangoré (1845 – 1944):</p>
+                  <p class="mb-0">Vals Op.8 No.4</p>
+                </div>
+                <div class="">
+                  <p class="mb-1">Ejemplo b)</p>
+                  <p class="mb-0">Vicente Asencio (1908 - 1979):</p>
+                  <p class="mb-0">Collectici Íntim</p>
+                  <p class="mb-0">- La Serenor</p>
+                  <p class="mb-0">- La Joia</p>
+                  <p class="mb-0">- La Calma</p>
+                </div>
+              </div>
+              <h5 class="fw-bold color2">Inscripción</h5>
+              <li class="mb-2">
+                Efectuar la cuota de inscripción por la cantidad de ${{
+                convocatoria.inscripcion.cuota.cifra }} ({{
+                convocatoria.inscripcion.cuota.texto }} pesos 00/100 M.N.) por
+                concepto de: “Inscripción {{ convocatoria.nombre }}”. El No. De
+                cuenta será proporcionado vía correo electrónico al completar el
+                registro.
+              </li>
+              <li class="mb-2">
+                Mandar comprobante de pago en formato PDF al email:
+                cigparacho@gmail.com Con asunto: Inscripción a la categoría {{
+                convocatoria.nombre }} – Nombre, Primer Apellido y Segundo
+                Apellido.
+              </li>
+              <li class="mb-4">
+                Los concursantes extranjeros sin pasaporte o residencia mexicana
+                deberán solicitar información adicional en la solicitud para
+                efectuar transacciones internacionales.
+              </li>
+              <h5 class="fw-bold color2">
+                Del sorteo y orden de participación
+              </h5>
+              <li class="mb-2">
+                El sorteo de participación se llevará a cabo el día {{
+                convocatoria.sorteo.fecha }} de Agosto de 2024 a las {{
+                convocatoria.sorteo.hora }} horas (hora de Ciudad de México) en
+                el Colegio Fray Francisco de Castro, ubicado en la calle Eduardo
+                Ruiz #246, Centro. Paracho, Michoacán. C.P. 60250.
+              </li>
+              <li class="mb-4">
+                Al finalizar el sorteo se dará a conocer el orden de los
+                concursantes, así como la fecha y hora de su participación
+                durante el concurso.
+              </li>
+              <h5 class="fw-bold color2">Generales</h5>
+              <li class="mb-2">El fallo del jurado será inapelable.</li>
+              <li class="mb-2">
+                La línea de jueces será integrada por tres maestros con amplia
+                trayectoria profesional y solvencia moral, invitados del
+                Festival Internacional de Guitarra de Paracho 2024.
+              </li>
+              <li class="mb-2">
+                En caso de una relación maestro-alumno o familiar existente o
+                preexistente entre concursantes y algún miembro del jurado, éste
+                está obligado a anular su voto y se promediarán los votos de los
+                jueces restantes.
+              </li>
+              <li v-if="convocatoria.fases.eliminatoria" class="mb-2">
+                Todas las fases del concurso serán abiertas al público.
+              </li>
+              <li v-else class="mb-2">El concurso será abierto al público.</li>
+              <li class="mb-2">
+                Los aplausos están permitidos al inicio y al final de la
+                participación de cada concursante.
+              </li>
+              <li>
+                Cualquier caso no previsto en la presente convocatoria, será
+                resuelto por el comité organizador del Concurso Internacional de
+                Guitarra de Paracho.
+              </li>
+            </ol>
+            <h5 class="fw-bold color2">Información de contacto</h5>
+            <p>
+              Para cualquier duda o aclaración al respecto de la presente
+              convocatoria, amablemente podemos atenderle a los teléfonos
+              móviles:
+            </p>
+            <ul>
+              <li class="mb-2">
+                (+52) 452 339 44 52 – José Alfredo Amezcua Janacua, director
+                artístico y coordinador general del festival.
+              </li>
+              <li class="mb-2">
+                (+52) 44 32 24 86 58 - Gabriel Méndez Alarcón, coordinador del
+                concurso.
+              </li>
+              <li class="mb-2">
+                (+52) 452 154 64 39 - Emmanuel Velázquez Olivos, coordinador de
+                logística.
+              </li>
+              <li class="mb-2">
+                (+52) 452 342 0533 - Emilio Francisco Hernández, coordinador de
+                actividades académicas.
+              </li>
+              <li>Correo electrónico: cigparacho@gmail.com</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Convocatorias card -->
+        <div v-else class="row">
+          <div
+            v-for="({id, nombre}) in convocatorias"
+            :key="id"
+            class="col-12 col-md-6 col-lg-4 mb-4"
+          >
+            <a
+              :href="`/convocatorias.html?id=${id}`"
+              class="text-decoration-none"
+            >
+              <!-- <i class="bi bi-file-text d-block fs10 color2"></i> -->
+              <div class="rounded-3 overflow-hidden">
+                <img
+                  src="../assets/img/logo1.jpg"
+                  alt="logo paracho"
+                  class="w-100 aspect-ratio-2-1 object-fit-cover"
+                />
+                <span class="d-block bg2 text-white fs-3 py-2 text-center"
+                  >{{ nombre }}</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/pages/convocatorias.js" type="module"></script>
+  </body>
+</html>
