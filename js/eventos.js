@@ -8,6 +8,8 @@ import { cGinaYPaulina } from "./eventos/cGinayPaulina.js"
 import { cEnriqueG } from "./eventos/cEnriqueG.js"
 import { cAlumnosCupatitzio } from "./eventos/cAlumnosCupatitzio.js"
 import { cDuoMozquedaUlate } from "./eventos/cDuoMozquedaUlate.js"
+import { cAlfredoA } from "./eventos/cAlfredoA.js"
+import { cEddieL } from "./eventos/cEddieL.js"
 import { dLauderos } from "./eventos/dLauderos.js"
 
 export const eventos = [
@@ -21,5 +23,7 @@ export const eventos = [
   cEnriqueG,
   cAlumnosCupatitzio,
   cDuoMozquedaUlate,
-  dLauderos
+  cAlfredoA,
+  cEddieL,
+  dLauderos,
 ]
