@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logo1.jpg" />
     <title>FIGP</title>
     <link rel="stylesheet" href="./assets/main.css" />
     <script
@@ -31,6 +31,23 @@
           ></lugar-evento>
           <evento-card
             v-for="evento in eventos.conciertos.estelares"
+            :key="evento.id"
+            :evento="evento"
+          ></evento-card>
+        </acordeon-panel>
+        <!-- Actividades matutinas -->
+        <acordeon-panel
+          target="matutinas"
+          :parent-target="idPanel"
+          :show="false"
+          header="Actividades matutinas"
+        >
+          <lugar-evento
+            :nombre="sedes[1].nombre"
+            :link="sedes[1].link"
+          ></lugar-evento>
+          <evento-card
+            v-for="evento in eventos.matutinos"
             :key="evento.id"
             :evento="evento"
           ></evento-card>

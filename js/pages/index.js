@@ -16,8 +16,8 @@ const estelares = eventos
 const vespertinos = eventos
   .filter(({ tipo }) => tipo === "vespertino")
   .sort((a, b) => a.fecha - b.fecha)
-
 const extension = eventos.find(({ tipo }) => tipo === "extension")
+const matutinos = eventos.filter(({ tipo }) => tipo === "matutino")
 
 createApp({
   components: {
@@ -36,6 +36,7 @@ createApp({
           vespertinos,
           extension,
         },
+        matutinos,
       },
       organizadores,
       sedes,

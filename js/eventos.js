@@ -7,6 +7,7 @@ import { cMartinR } from "./eventos/cMartinR.js"
 import { cGinaYPaulina } from "./eventos/cGinayPaulina.js"
 import { cEnriqueG } from "./eventos/cEnriqueG.js"
 import { cAlumnosCupatitzio } from "./eventos/cAlumnosCupatitzio.js"
+import { dLauderos } from "./eventos/dLauderos.js"
 
 export const eventos = [
   cAngelS,
@@ -18,4 +19,5 @@ export const eventos = [
   cGinaYPaulina,
   cEnriqueG,
   cAlumnosCupatitzio,
+  dLauderos
 ]

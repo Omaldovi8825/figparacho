@@ -28,6 +28,15 @@ export class Concierto extends Evento {
   }
 }
 
+export class Lauderos extends Evento {
+  constructor(id, nombre, fecha, hora, img, artistas, programa, tipo) {
+    super(id, nombre, fecha, hora, img)
+    this.artistas = artistas
+    this.programa = programa
+    this.tipo = tipo
+  }
+}
+
 export class Organizador {
   constructor(id, nombre, img, cv) {
     this.id = id
