@@ -10,18 +10,29 @@ export class Artista {
 }
 
 export class Evento {
-  constructor(id, nombre, fecha, hora, img) {
+  constructor(id, nombre, fecha, hora, img, verMas) {
     this.id = id
     this.nombre = nombre
     this.fecha = fecha
     this.hora = hora
     this.img = img
+    this.verMas = verMas
   }
 }
 
 export class Concierto extends Evento {
-  constructor(id, nombre, fecha, hora, img, artistas, programa, tipo) {
-    super(id, nombre, fecha, hora, img)
+  constructor(
+    id,
+    nombre,
+    fecha,
+    hora,
+    img,
+    artistas,
+    programa,
+    tipo,
+    verMas = true
+  ) {
+    super(id, nombre, fecha, hora, img, verMas)
     this.artistas = artistas
     this.programa = programa
     this.tipo = tipo
@@ -29,8 +40,18 @@ export class Concierto extends Evento {
 }
 
 export class Lauderos extends Evento {
-  constructor(id, nombre, fecha, hora, img, artistas, programa, tipo) {
-    super(id, nombre, fecha, hora, img)
+  constructor(
+    id,
+    nombre,
+    fecha,
+    hora,
+    img,
+    artistas,
+    programa,
+    tipo,
+    verMas = true
+  ) {
+    super(id, nombre, fecha, hora, img, verMas)
     this.artistas = artistas
     this.programa = programa
     this.tipo = tipo

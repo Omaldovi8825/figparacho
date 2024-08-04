@@ -18,6 +18,7 @@ export const EventoCard = {
             hrs</span
           >
           <a
+            v-if="evento.verMas"
             class="text-decoration-none bg2 text-white py-1 px-2 rounded"
             :href="linkUrl"
             >Ver más</a
