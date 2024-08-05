@@ -9,30 +9,31 @@ export const cPabloG = new Concierto(
   null,
   [pabloG],
   /*html*/ `
-    <p>Il Travatore Op. 8 No 27, Johann Kaspar Mertz (1806-1856)</p>
-    <p>Quatrè pièces brèves, Franck Martin (1890-1974)</p>
+    <p>Leo Brouwer</p>
     <ul>
-      <li>Prelude</li>
-      <li>Aria</li>
-      <li>Plainté</li>
-      <li>Comme un gigue</li>
+      <li>Canción de cuna</li>
+      <li>Ojos brujos</li>
+      <li>Elogio de la danza</li>
     </ul>
-    <p>
-      Selección de los XXIV Carpichos de Goya, Mario Castelnuovo
-      Tedesco (1895-1968)
-    </p>
+    <p>Heitor Villalobos</p>
     <ul>
-      <li>Francisco Goya y lucientes</li>
-      <li>Obsequio al maestro</li>
-      <li>Dios la perdone y era su madre</li>
-      <li>No hubo remedio</li>
+      <li>Estudio I</li>
+      <li>Estudio X</li>
+      <li>Estudio XI</li>
     </ul>
-    <p>Sonata Op. 47, Alberto Ginastera (1916-1983)</p>
+    <p>Simone Ianarelli</p>
     <ul>
-      <li>Esordio</li>
-      <li>Scherzo</li>
-      <li>Canto</li>
-      <li>Final</li>
+      <li>El último café juntos</li>
+    </ul>
+    <p>Antonio José</p>
+    <ul>
+      <li>Sonata para guitarra</li>
+      <ul>
+        <li>Allegro moderato</li>
+        <li>Minueto</li>
+        <li>Pavana triste</li>
+        <li>Final</li>
+      </ul>
     </ul>
   `,
   "estelar"
