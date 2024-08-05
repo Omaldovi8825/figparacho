@@ -8,7 +8,7 @@ export const cEddieL = new Concierto(
   "17:30",
   null,
   [eddieL],
-  null,
+  /*html*/ ``,
   "vespertino",
   false
 )
